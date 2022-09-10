@@ -1,6 +1,5 @@
 import React, { StrictMode } from "react"
-import { createRoot } from "react-dom/client"
+import { render } from "react-dom"
 import App from "./App"
 
-const root = createRoot( document.querySelector( "#root" ) )
-root.render( <StrictMode> <App /> </StrictMode> )
+render( <StrictMode> <App /> </StrictMode>, document.querySelector( "#root" ) )
