@@ -4,6 +4,7 @@ import "./menu-button.css"
 
 const MenuButton = () => {
     const { menu, setMenu } = useContext( MenuContext )
+    const initialMount = useRef( true )
     const buttonRef = useRef( null )
 
     const toggleMenuButton = () => buttonRef.current.classList.toggle( "active" )
@@ -19,7 +20,8 @@ const MenuButton = () => {
         className: "menu-button_wrapper", }
 
     useLayoutEffect( () => {
-        if ( ! menu ) setTimeout( () => toggleMenuButton(), 350 ) }, [ menu ] )
+        if ( ! menu && ! initialMount.current ) setTimeout( () => toggleMenuButton(), 350 ) 
+        initialMount.current = false }, [ menu ] )
     
     return  <ul { ...buttonOptions } >
                 <li></li>

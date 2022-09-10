@@ -11,6 +11,7 @@
     height: .5rem;
     width: 4.5rem;
     background-color: var( --dark ); 
-    border-radius: .15rem; }
+    border-radius: .15rem; 
+    cursor: pointer; }
 
 .menu-button_wrapper.active { transform: rotate(90deg); }

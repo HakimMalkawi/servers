@@ -9,7 +9,7 @@ export const LoginProvider = ( { children } ) => {
     const navigate = useNavigate()
 
     useEffect( () => { 
-        navigate( login ? "servers" : "/" )
+        navigate( login ? "servers/list" : "servers/home" )
         setStorage( "login_credentials", login ) }, [ login ] )
 
     return  <LoginContext.Provider value={ { login, setLogin } } >

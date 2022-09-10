@@ -13,8 +13,8 @@ const AppRouter = () => {
                 <Menu />
                 <Navbar />
                 <Routes>
-                    <Route index element={ <Home /> } />
-                    <Route path="servers" element={ <Servers /> } />
+                    <Route index path="servers/home" element={ <Home /> } />
+                    <Route path="servers/list" element={ <Servers /> } />
                 </Routes> 
             </div> }
 

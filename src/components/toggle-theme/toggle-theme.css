@@ -9,7 +9,7 @@
     cursor: pointer; }
 
 .toggle-theme_wrapper::after {
-    content: "Dark Mode";
+    content: "Toggle Theme";
     position: absolute;
     width: max-content;
     font-size: 2rem; }
