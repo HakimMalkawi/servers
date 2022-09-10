@@ -1,0 +1,22 @@
+.exit-button_wrapper {
+    display: flex;
+    position: relative;
+    height: min-content;
+    width: min-content;
+    padding-left: 2rem;
+    justify-content: center;
+    align-items: center; }
+
+.exit-button_wrapper > span {
+    position: absolute;
+    height: .65rem;
+    width: 4rem;
+    background-color: var( --secondary ); 
+    cursor: pointer; }
+
+.exit-button_wrapper:hover > span,
+.exit-button_wrapper:focus > span { 
+    background-color: var( --ruby ); }
+
+.exit-button_wrapper > span:nth-child( 1 ) { transform: rotate( 45deg ); }
+.exit-button_wrapper > span:nth-child( 2 ) { transform: rotate( -45deg ); }

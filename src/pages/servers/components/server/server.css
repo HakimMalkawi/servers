@@ -1,0 +1,20 @@
+.server_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var( --blue );
+    width: 100%;
+    padding: 2rem;
+    list-style-type: none;
+    font-size: 2rem; 
+    border-radius: 1rem;
+    border: solid 2px var( --secondary );
+    transition: transform .15s ease-in-out; }
+
+.server_wrapper * { cursor: default; }
+
+.server_wrapper:hover,
+.server_wrapper:focus { transform: scale( 1.05 ); }
+
+.server_name { color: var( --teal ) ; }
+.server_distance { color: var( --light ); }

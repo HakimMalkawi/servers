@@ -1,0 +1,13 @@
+.home_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 10rem 5rem;
+    gap: 5rem; 
+    border-radius: 1rem;
+    background-color: var( --blue ); 
+    color: var( --light ); }
+
+@media ( max-width: 500px ) { .home_wrapper { padding: 5rem; } }
+@media ( max-width: 400px ) { .home_wrapper { padding: 3rem; } }

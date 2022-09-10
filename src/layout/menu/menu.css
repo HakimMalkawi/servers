@@ -1,0 +1,14 @@
+.menu_wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    height: 100vh;
+    width: 100vw;
+    padding: 5rem;
+    right: -100%;
+    z-index: 1; 
+    background-color: var( --primary );
+    transition: right .5s ease-in-out, background-color .25s ease-in-out; }
+
+.menu_wrapper.active { right: 0 }

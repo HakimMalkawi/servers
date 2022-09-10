@@ -1,0 +1,16 @@
+.menu-button_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    width: min-content;
+    list-style-type: none;
+    cursor: pointer;
+    transition: transform .5s ease-in-out; }
+
+.menu-button_wrapper > li {
+    height: .5rem;
+    width: 4.5rem;
+    background-color: var( --dark ); 
+    border-radius: .15rem; }
+
+.menu-button_wrapper.active { transform: rotate(90deg); }

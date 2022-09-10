@@ -1,0 +1,20 @@
+.controls_wrapper {
+  align-self: center;
+  display: flex;
+  gap: 3rem; }
+
+.controls_wrapper > button {
+    font-size: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: var( --teal );
+    border-radius: 1rem;
+    border: 2px solid var( --secondary );
+    cursor: pointer;
+    transition: transform .15s ease-in-out; }
+
+.controls_wrapper > button:hover,
+.controls_wrapper > button:focus {
+    transform: translateY(-5px);
+    outline: none; }
+
+@media ( max-width: 475px ) { .controls_wrapper { flex-direction: column; } }

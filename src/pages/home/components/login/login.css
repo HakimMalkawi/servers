@@ -1,0 +1,72 @@
+.login_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: min-content;
+    align-items: center; }
+
+.login_wrapper label { 
+    font-size: 2rem; 
+    cursor: pointer; }
+
+.login_wrapper label:hover,
+.login_wrapper label:focus {
+    color: var( --teal ); }
+
+.login_wrapper input {
+    height: 4rem;
+    width: 40rem;
+    border-radius: 1rem;
+    background: none;
+    outline: dashed var( --dark);
+    font-size: 2rem;
+    color: var( --light );
+    padding-inline: 2rem;
+    cursor: text; }
+
+.login_wrapper button {
+    height: 5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: var( --teal );
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var( --dark ); 
+    box-shadow: black 5px 10px 15px -10px; 
+    transition: box-shadow .15s ease-in-out, transform .15s ease-in-out, background-color .25s ease-in-out; }
+
+.login_wrapper button:hover,
+.login_wrapper button:focus { box-shadow: black 10px 30px 35px -10px;  }
+.login_wrapper button:active { box-shadow: black inset 5px 5px 15px -5px; }
+
+#password { font-size: 4rem; }
+
+@media ( max-width: 640px ) {
+    .login_wrapper label { font-size: 2rem; }
+    .login_wrapper input { width: 30rem; } 
+
+    .login_wrapper button {
+        height: 5rem;
+        width: 15rem; 
+        font-size: 2rem;
+        font-weight: 700; } }
+
+@media ( max-width: 500px ) {
+    .login_wrapper label { font-size: 1.5rem; }
+    .login_wrapper input { width: 25rem; } 
+
+    .login_wrapper button {
+        height: 4.5rem;
+        width: 12rem; 
+        font-size: 1.5rem;
+        font-weight: 700; } }
+
+@media ( max-width: 400px ) {
+    .login_wrapper label { font-size: 1.5rem; }
+    .login_wrapper input { width: 20rem; } 
+
+    .login_wrapper button {
+        height: 3.5rem;
+        width: 12rem; 
+        font-size: 1.75rem;
+        font-weight: 700; } }

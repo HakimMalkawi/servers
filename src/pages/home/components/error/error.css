@@ -1,0 +1,52 @@
+.error_wrapper {
+    display: grid;
+    position: fixed;
+    top: 0;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000CC; }
+
+.error_content { 
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: var( --secondary );
+    background-color: var( --primary );
+    padding: 5rem 7rem;    
+    max-width: 70rem;
+    border-radius: 1rem;
+    border: solid var( --secondary );
+    text-align: center; }
+
+.error_content h1 { font-size: 3.5rem; }
+.error_content h1 span { color: var( --ruby ); }
+.error_content h2 { font-size: 2.5rem; }
+
+.error_content button {
+    height: 5rem;
+    width: 60%;
+    margin: auto;
+    font-size: 2rem;
+    background-color: var( --teal );
+    border-radius: 1rem;
+    border: 2px solid var( --secondary );
+    box-shadow: black 10px 15px 15px -7px; 
+    transition: transform .25s ease-in-out, box-shadow .15s ease-in-out;  }
+
+.error_content button:hover,
+.error_content button:focus { 
+    transform: translateY( -5px ); 
+    box-shadow: black 10px 30px 35px -10px; }
+
+.error_content button:active { box-shadow: black inset 5px 5px 15px -5px; }
+
+@media ( max-width: 500px ) {
+    .error_content { padding: 3rem; }
+    .error_content h1 { font-size: 2.5rem; }
+    .error_content h2 { font-size: 1.5rem; }
+    .error_content button {
+        font-size: 1.5rem;
+        height: 4rem; } }
+
+@media ( max-width: 380px ) { .error_content button { font-size: 1rem; } }

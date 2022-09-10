@@ -1,0 +1,27 @@
+.logout_wrapper {
+    margin-top: auto;
+    padding-inline: 15rem;
+    width: min-content;
+    background-color: var( --ruby );
+    color: var( --light );
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: black 5px 20px 25px -10px; 
+    cursor: pointer;
+    transition: box-shadow .15s ease-in-out, transform .15s ease-in-out, background-color .25s ease-in-out; }
+
+.logout_wrapper:hover,
+.logout_wrapper:focus {
+    box-shadow: black 10px 30px 35px -10px;
+    transform: translateY( -3px ); }
+
+.logout_wrapper:active { box-shadow: black inset 5px 5px 15px -5px; }
+
+@media ( max-width: 700px ) { 
+    .logout_wrapper { 
+        width: 100%; 
+        padding-inline: 0; } }

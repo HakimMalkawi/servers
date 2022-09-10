@@ -1,0 +1,14 @@
+.servers_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    gap: 6rem;
+    padding-inline: 3rem; }
+
+.server-list_wrapper {
+    display: grid;
+    grid-gap: 2rem;
+    justify-content: center;
+    grid-template: auto / repeat( auto-fit, minmax( 20rem, 30rem ) ); }
+
+@media ( max-width: 475px ) { .servers_wrapper { gap: 4rem; } }

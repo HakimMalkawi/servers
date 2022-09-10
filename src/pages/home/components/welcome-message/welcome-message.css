@@ -1,0 +1,16 @@
+.welcome-message_wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+
+.welcome-message_wrapper h1 { font-size: 8rem; }
+.welcome-message_wrapper h3 { font-size: 4rem; }
+
+@media ( max-width: 640px ) {
+    .welcome-message_wrapper h1 { font-size: 7rem; }
+    .welcome-message_wrapper h3 { font-size: 3rem; } }
+
+@media ( max-width: 500px ) {
+    .welcome-message_wrapper h1 { font-size: 5rem; }
+    .welcome-message_wrapper h3 { font-size: 2rem; } }

@@ -1,0 +1,51 @@
+:root {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none; 
+    cursor: default;
+    transition: color .25s ease-in-out, background-color .25s ease-in-out; }
+
+button,
+a { cursor: pointer; }
+
+.dark {
+    --primary: #2F2F2F;
+    --secondary: #F2F2F2;
+    --dark: #2F2F2F;
+    --light: #F2F2F2;
+    --blue: #3755B0;
+    --teal: #0CD1A3;
+    --ruby: #D6064F; }
+
+.light {
+    --primary: #B3BEE1;
+    --secondary: #3D4146;
+    --dark: #2F2F2F;
+    --light: #F2F2F2;
+    --blue: #3755B0;
+    --teal: #0FB4A9;
+    --ruby: #8D033F; }
+
+.app_wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var( --primary );
+    color: var( --secondary ); }
+
+@media ( max-width: 300px ) { :root { font-size: 9px; } }
+@media ( max-width: 275px ) { :root { font-size: 8px; } }
+@media ( max-width: 250px ) { :root { font-size: 7px; } }
+@media ( max-width: 215px ) { :root { font-size: 6px; } }
+@media ( max-width: 180px ) { :root { font-size: 5px; } }
+@media ( max-width: 160px ) { :root { font-size: 4px; } }
+@media ( max-width: 140px ) { :root { font-size: 3px; } }
+@media ( max-width: 100px ) { :root { font-size: 2px; } }
+@media ( max-width: 65px ) { :root { font-size: 1px; } }

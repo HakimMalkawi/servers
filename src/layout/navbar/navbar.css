@@ -1,0 +1,7 @@
+.navbar_wrapper {
+    display: flex;
+    height: 6rem;
+    background-color: var( --teal );
+    align-items: center;
+    justify-content: flex-end;
+    padding-inline: 3rem; }
